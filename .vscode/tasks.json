@@ -1,0 +1,33 @@
+{
+    "version": "0.1.0",
+    "showOutput": "always",
+    "isShellCommand": true,
+    "suppressTaskName": true,
+
+    "command": "make",
+    "windows": {
+        "command": "msys-make"
+    },
+
+    "tasks": [{
+            "taskName": "build",
+            "args": ["all"],
+            "problemMatcher": "$gcc"
+        },
+
+        {
+            "taskName": "clean",
+            "args": ["clean"]
+        },
+
+        {
+            "taskName": "depend",
+            "args": ["depend"]
+        },
+
+        {
+            "taskName": "run",
+            "command": "${workspaceRoot}/generalTrees"
+        }
+    ]
+}

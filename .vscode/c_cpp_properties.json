@@ -1,0 +1,65 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "intelliSenseMode": "clang-x64",
+            "includePath": [
+                "${workspaceRoot}",
+                "${MINGW_HOME}/include/c++/7.2.0",
+                "${MINGW_HOME}/include/c++/7.2.0/x86_64-w64-mingw32",
+                "${MINGW_HOME}/include/c++/7.2.0/backward",
+                "${MINGW_HOME}/lib/gcc/x86_64-w64-mingw32/7.2.0/include",
+                "${MINGW_HOME}/include",
+                "${MINGW_HOME}/lib/gcc/x86_64-w64-mingw32/7.2.0/include-fixed",
+                "${MINGW_HOME}/x86_64-w64-mingw32/include"
+            ],
+            "defines": [],
+            "browse": {
+                "path": [
+                    "${workspaceRoot}",
+                    "${MINGW_HOME}/include/c++/7.2.0",
+                    "${MINGW_HOME}/include/c++/7.2.0/x86_64-w64-mingw32",
+                    "${MINGW_HOME}/include/c++/7.2.0/backward",
+                    "${MINGW_HOME}/lib/gcc/x86_64-w64-mingw32/7.2.0/include",
+                    "${MINGW_HOME}/include",
+                    "${MINGW_HOME}/lib/gcc/x86_64-w64-mingw32/7.2.0/include-fixed",
+                    "${MINGW_HOME}/x86_64-w64-mingw32/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        },
+        {
+            "name": "Linux",
+            "intelliSenseMode": "clang-x64",
+            "includePath": [
+                "${workspaceRoot}",
+                "/usr/local/include/c++/7.2.0",
+                "/usr/local/include/c++/7.2.0/x86_64-linux-gnu",
+                "/usr/local/include/c++/7.2.0/backward",
+                "/usr/local/lib/gcc/x86_64-linux-gnu/7.2.0/include",
+                "/usr/local/include",
+                "/usr/local/lib/gcc/x86_64-linux-gnu/7.2.0/include-fixed",
+                "/usr/include/x86_64-linux-gnu",
+                "/usr/include"
+            ],
+            "defines": [],
+            "browse": {
+                "path": [
+                    "${workspaceRoot}",
+                    "/usr/local/include/c++/7.2.0",
+                    "/usr/local/include/c++/7.2.0/x86_64-linux-gnu",
+                    "/usr/local/include/c++/7.2.0/backward",
+                    "/usr/local/lib/gcc/x86_64-linux-gnu/7.2.0/include",
+                    "/usr/local/include",
+                    "/usr/local/lib/gcc/x86_64-linux-gnu/7.2.0/include-fixed",
+                    "/usr/include/x86_64-linux-gnu",
+                    "/usr/include"
+                    ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 3
+}

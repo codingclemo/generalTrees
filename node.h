@@ -16,6 +16,7 @@ class Node {
         virtual void setNextSibling(Node *n);
         virtual void print(std::ostream &os) const = 0;
 
+        friend std::ostream & operator << (std::ostream &os, const Node &n);
 }; 
 
 #endif 

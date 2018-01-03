@@ -33,6 +33,12 @@ void Node::setNextSibling(Node *n){
     nextSibling = n;
 }
 
-void Node::print(std::ostream &os) const {
-    os << "Node print" << flush;
+// das ist eine abstrakte Fkt = 0;    - spannend dass das geht
+// void Node::print(std::ostream &os) const {
+//     os << "Node print" << flush;
+// }
+
+std::ostream & operator << (std::ostream &os, const Node &n) {
+    n.print(os);
+    return os; 
 }

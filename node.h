@@ -16,6 +16,6 @@ class Node {
         virtual void setNextSibling(Node *n);
         virtual void print(std::ostream &os) const = 0;
 
-};
+}; 
 
 #endif NODE_H

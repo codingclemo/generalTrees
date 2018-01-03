@@ -4,7 +4,7 @@
 
 
 
-Tree::Tree(){}
+Tree::Tree(){} 
 Tree::~Tree(){}
 Node* Tree::getRoot() const{}
 void Tree::insertChild(Node *parent, Node *child){}

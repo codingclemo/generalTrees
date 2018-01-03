@@ -8,7 +8,7 @@ int main(void) {
   cout << "Hello World" << std::endl;
 
   Node* a;
-  Node* b;
+  Node* b; 
   Node* c;
   a->setFirstChild(b);
   b->setNextSibling(c);

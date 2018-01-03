@@ -17,6 +17,6 @@ class Tree {
         virtual void Clear();
         virtual void DeleteElements();
         virtual void print(std::ostream &os) const;
-};
+}; 
 
 #endif TREE_H

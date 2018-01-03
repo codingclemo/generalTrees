@@ -25,7 +25,7 @@ Node* Node::getNextSibling() const {
     if (this->nextSibling != nullptr) {
         return this->nextSibling; 
     }
-}
+} 
 
 void Node::setFirstChild(Node *n){
     cout << "Node setFirstChild" << endl;

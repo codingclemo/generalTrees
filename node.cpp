@@ -15,16 +15,12 @@ Node::~Node(){
 
 Node* Node::getFirstChild() const {
     cout << "Node getFirstChild" << endl;
-    if (this->firstChild != nullptr) {
-        return this->firstChild;
-    }
+    return this->firstChild;
 }
 
 Node* Node::getNextSibling() const {
     cout << "Node getNextSibling" << endl;
-    if (this->nextSibling != nullptr) {
-        return this->nextSibling; 
-    }
+    return this->nextSibling; 
 } 
 
 void Node::setFirstChild(Node *n){

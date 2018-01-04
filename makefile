@@ -12,7 +12,7 @@ CCFLAGS = -g -pedantic -Wall -Wextra -ggdb
 
 # linker/loader settings
 LD      = g++
-LDFLAGS = -static  # link all libraries statically
+LDFLAGS =  # link all libraries statically
 
 # names of all .c and .o files
 CFILES  = $(wildcard *.cpp)  # $(..) works for gmake only

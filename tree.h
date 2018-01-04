@@ -19,4 +19,4 @@ class Tree {
         virtual void print(std::ostream &os) const;
 }; 
 
-#endif TREE_H
+#endif 

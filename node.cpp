@@ -15,16 +15,12 @@ Node::~Node(){
 
 Node* Node::getFirstChild() const {
     cout << "Node getFirstChild" << endl;
-    if (this->firstChild != nullptr) {
-        return this->firstChild;
-    }
+    return this->firstChild;
 }
 
 Node* Node::getNextSibling() const {
     cout << "Node getNextSibling" << endl;
-    if (this->nextSibling != nullptr) {
-        return this->nextSibling; 
-    }
+    return this->nextSibling; 
 } 
 
 void Node::setFirstChild(Node *n){
@@ -37,6 +33,12 @@ void Node::setNextSibling(Node *n){
     nextSibling = n;
 }
 
-void Node::print(std::ostream &os) const {
-    os << "Node print" << flush;
+// das ist eine abstrakte Fkt = 0;    - spannend dass das geht
+// void Node::print(std::ostream &os) const {
+//     os << "Node print" << flush;
+// }
+
+std::ostream & operator << (std::ostream &os, const Node &n) {
+    n.print(os);
+    return os; 
 }

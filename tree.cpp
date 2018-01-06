@@ -82,7 +82,32 @@ void Tree::DeleteElements(){
     }
 }
 
-// void Tree::print(std::ostream &os) const{}
+void Tree::printRecursive(Node &n, int depth, std::ostream &os) const {
+    Node *sibling;
+    sibling = &n; 
+
+    if (sibling != nullptr) {
+        os << std::string(depth * 4, ' ') << *sibling <<endl;
+        if (sibling->getFirstChild() != nullptr) {
+            printRecursive(*(sibling->getFirstChild()), depth+1, os);
+            // printRecursive(*(sibling->getNextSibling()), depth+1, os);
+        } 
+        while (sibling != nullptr) {
+            sibling = sibling->getNextSibling();
+            if (sibling != nullptr) {
+                os << std::string(depth * 4, ' ') << *sibling <<endl;
+                if (sibling->getFirstChild() != nullptr) {
+                    printRecursive(*(sibling->getFirstChild()), depth+1, os);                   
+                } 
+            }
+        }
+    }
+}
+
+void Tree::print(std::ostream &os) const {
+    printRecursive(*root, 1, os);
+}
+
 
 void Tree::copySubtree(Node &dest, Node &source) {
     Node *sChild;

@@ -10,7 +10,7 @@ Node::Node(Node *firstChild, Node *nextSibling)
 }
 
 Node::~Node(){
-    cout << "Node deconstructed" << endl;
+    cout << "Node destructed" << endl;
 }
 
 Node* Node::getFirstChild() const {

@@ -2,10 +2,12 @@
 #define TREE_H
 
 #include <ostream>
+#include "node.h"
 
 class Tree {
     protected:
         Node *root;
+        int nodeCount;
 
     public:
         Tree();
@@ -17,6 +19,13 @@ class Tree {
         virtual void Clear();
         virtual void DeleteElements();
         virtual void print(std::ostream &os) const;
+        virtual void copySubtree(Node &dest, Node &source);
+
+        Tree& operator = (const Tree &t);
+
+        friend std::ostream & operator << (std::ostream &os, const Tree &t);
 }; 
+
+
 
 #endif 

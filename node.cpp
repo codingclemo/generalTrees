@@ -14,22 +14,22 @@ Node::~Node(){
 }
 
 Node* Node::getFirstChild() const {
-    cout << "Node getFirstChild" << endl;
+    // cout << "Node getFirstChild" << endl;
     return this->firstChild;
 }
 
 Node* Node::getNextSibling() const {
-    cout << "Node getNextSibling" << endl;
+    // cout << "Node getNextSibling" << endl;
     return this->nextSibling; 
 } 
 
 void Node::setFirstChild(Node *n){
-    cout << "Node setFirstChild" << endl;
+    // cout << "Node setFirstChild" << endl;
     firstChild = n;
 }
 
 void Node::setNextSibling(Node *n){
-    cout << "Node setNextSibling" << endl;
+    // cout << "Node setNextSibling" << endl;
     nextSibling = n;
 }
 

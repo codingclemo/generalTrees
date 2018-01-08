@@ -105,11 +105,14 @@ void Tree::printRecursive(Node &n, int depth, std::ostream &os) const {
 }
 
 void Tree::print(std::ostream &os) const {
+    cout << "Tree structure and height:" << endl;
+    cout << "    1    2    3    4    .." << endl;
     printRecursive(*root, 1, os);
 }
 
 
 void Tree::copySubtree(Node &dest, Node &source) {
+    cout << "copy subtree" << endl;
     Node *sChild;
     Node *sSibling;
     Node *dChild;
@@ -120,6 +123,7 @@ void Tree::copySubtree(Node &dest, Node &source) {
     dest.setFirstChild(dChild);
 
     while (sChild != nullptr) {
+        cout << "sChild != nullptr, sChild = " << *sChild << endl;
         
         /* Clone the first Child of the current Node */
         dChild = sChild->clone();

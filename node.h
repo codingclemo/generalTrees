@@ -1,5 +1,4 @@
-#ifndef NODE_H
-#define NODE_H
+#pragma once
 
 #include <ostream>
 
@@ -20,5 +19,3 @@ class Node {
 
         friend std::ostream & operator << (std::ostream &os, const Node &n);
 }; 
-
-#endif 

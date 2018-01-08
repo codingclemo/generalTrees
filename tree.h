@@ -1,12 +1,11 @@
-#ifndef TREE_H
-#define TREE_H
-
+#pragma once
 #include <ostream>
 #include "node.h"
 
 class Tree {
     private:
         void printRecursive(Node &n, int depth, std::ostream &os) const;
+        virtual void copySubtree(Node &dest, Node &source);
 
     protected:
         Node *root;
@@ -22,13 +21,8 @@ class Tree {
         virtual void Clear();
         virtual void DeleteElements();
         virtual void print(std::ostream &os) const;
-
-        virtual void copySubtree(Node &dest, Node &source);
+        
         Tree& operator = (const Tree &t);
 
         friend std::ostream & operator << (std::ostream &os, const Tree &t);
 }; 
-
-
-
-#endif 
